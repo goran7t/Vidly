@@ -229,9 +229,18 @@
     <Compile Include="Migrations\201712221456473_AddCustomerBirthdate.Designer.cs">
       <DependentUpon>201712221456473_AddCustomerBirthdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712251547138_AddGenre.cs" />
+    <Compile Include="Migrations\201712251547138_AddGenre.Designer.cs">
+      <DependentUpon>201712251547138_AddGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712251550502_PopulateGenre.cs" />
+    <Compile Include="Migrations\201712251550502_PopulateGenre.Designer.cs">
+      <DependentUpon>201712251550502_PopulateGenre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -347,6 +356,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712221456473_AddCustomerBirthdate.resx">
       <DependentUpon>201712221456473_AddCustomerBirthdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712251547138_AddGenre.resx">
+      <DependentUpon>201712251547138_AddGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712251550502_PopulateGenre.resx">
+      <DependentUpon>201712251550502_PopulateGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
