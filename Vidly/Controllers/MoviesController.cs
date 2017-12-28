@@ -39,6 +39,17 @@ namespace Vidly.Controllers
             return View(movie);            
         }
 
+        public ActionResult New()
+        {
+            var genres = _context.Genres.ToList();
+            var viewModel = new MovieFormViewModel
+            {
+                Genres = genres
+            };
+
+            return View(viewModel);
+        }
+
         private IEnumerable<Movie> GetMovies() => new List<Movie>
             {
                 new Movie { Id = 1, Name = "Shrek"},
